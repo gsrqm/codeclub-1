@@ -71,8 +71,15 @@ export default {
 	//addEventListener('fetch', event => { event.respondeWith( handleRequest(event.request)) })
 	//I did not understand quite well the sintax of what we are doing in the "function" argument of the addEventListener function
 	//Also could not put the service syntax to work
+
 	//MARK SAID TO USE MODULE SYNTAX GOING FORWARD!
 
+	//QUESTION: how can I use functions using Modular syntax??
+	//I was trying to organize the code but Im getting a bunch of "expected promise" errors
+
+	//QUESTION: Im not sure I know what export default is...
+
+	//QUESTION: I created a new worker, should I have used the one from session 1? is there a limit of workers we can have?
 
 
 };
