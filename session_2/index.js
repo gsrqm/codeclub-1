@@ -12,7 +12,7 @@ export default {
 		return handleRequest(request);
 
 		async function handleRequest(request){
-			if (request.url == "https://workers2.guilherme-cf.workers.dev/" & request.method == "GET") 
+			if (request.url == "https://workers1.guilherme-cf.workers.dev/" & request.method == "GET") 
 			{
 				var index = Math.floor(Math.random() * (4 - 1 + 1) + 1);
 				//basically the line before gives a random number between a max and a min. max = 4 and min = 1
@@ -26,7 +26,7 @@ export default {
 					},
 				});
 			}
-			else if (request.url == "https://workers2.guilherme-cf.workers.dev/" & request.method == "POST") 
+			else if (request.url == "https://workers1.guilherme-cf.workers.dev/" & request.method == "POST") 
 			{
 				return new Response('This was a POST request, Hello worker!!!!', 
 				{
