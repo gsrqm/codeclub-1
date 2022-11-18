@@ -9,16 +9,13 @@ export default {
 			'4':'Im message number four...Im the last!... or Am I?'
 		}
 		
-		//handleRequest(request);
+		return handleRequest(request);
 
-		//function handleRequest(request){
+		async function handleRequest(request){
 			if (request.url == "https://workers2.guilherme-cf.workers.dev/" & request.method == "GET") 
 			{
-				//Logging for testing purposes
-				//console.log(request.method)
-				//return new Response(tableOfRandomness[Math.random*4], 
-				//{
 				var index = Math.floor(Math.random() * (4 - 1 + 1) + 1);
+				//basically the line before gives a random number between a max and a min. max = 4 and min = 1
 				console.log(index)
 				//QUESTION: sometimes it runs the code twice in the same request.. check logs
 				return new Response(tableOfRandomness[index], 
@@ -31,8 +28,6 @@ export default {
 			}
 			else if (request.url == "https://workers2.guilherme-cf.workers.dev/" & request.method == "POST") 
 			{
-				//Logging for testing purposes
-				//console.log(request.method)
 				return new Response('This was a POST request, Hello worker!!!!', 
 				{
 					headers: 
@@ -53,7 +48,7 @@ export default {
 					},
 				});
 			}
-		//}
+		}
 
 	},
 
